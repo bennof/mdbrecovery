@@ -33,12 +33,14 @@ all: license $(BINARY)
 	@echo "Done."
 
 
-$(BINARY): $(OBJECTS)
+$(BINARY): $(OBJECTS) $(BIN_DIR)
 	$(LD) $(LDFLAGS) -o $@ $< $(LIBS)
 
 %.o: %.c $(INCLUDES)
 	$(CC) -c -o $@ $< $(CFLAGS) $(INCLUDE)
 
+$(BIN_DIR):
+	mkdir -p $(BIN_DIR)
 	
 .PHONY: clean
 clean:
