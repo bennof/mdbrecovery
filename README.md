@@ -13,7 +13,7 @@ Enter `./mdbrecovery <access db file>` and watch output.
 ## About the Author
 
 Benjamin 'Benno' Falkner 
-contact@benjaminfalkner.de 
+contact@falkner.xyz
 
 I am a teacher for math, physics and computer science in German 
 secondary / high school.  
